@@ -31,18 +31,3 @@ npm install
 npm run dev
 ```
 
-## ☁️ Vercel Deployment Instructions
-
-### 1. Environment Variables
-In your Vercel project settings, add the following environment variables:
-- `GOOGLE_CLIENT_ID`: Your Google OAuth Client ID.
-- `GOOGLE_CLIENT_SECRET`: Your Google OAuth Client Secret.
-- `NEXT_PUBLIC_BASE_URL`: Your production URL (e.g., `https://your-app.vercel.app`).
-
-### 2. Google Cloud Console Configuration
-Update your OAuth client settings:
-1.  Add `https://your-app.vercel.app` to **Authorized JavaScript Origins**.
-2.  Add `https://your-app.vercel.app/api/auth/callback` to **Authorized Redirect URIs**.
-
-### 3. Note on Token Persistence
-Vercel's serverless environment is stateless. For persistent login, it's recommended to integrate a database (like Vercel KV or MongoDB) to store the `token.json` content. The current code includes a memory cache for the current session, but a database is needed for long-term production use.
