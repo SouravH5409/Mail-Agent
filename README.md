@@ -2,13 +2,13 @@
 
 An intelligent mail agent that scans your starred emails for placement drives and interviews, extracts date/time details, and automatically schedules them in your Google Calendar.
 
-## ✨ Features
+##  Features
 - **Gmail Integration**: Scans only starred emails for focused task extraction.
 - **Smart Analysis**: Extracts interview and placement details from email bodies.
 - **Auto-Scheduling**: One-click event creation in Google Calendar.
 - **Premium UI**: Modern dark-mode interface with glassmorphism effects.
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### 1. Google Cloud Project Setup
 To use this app, you need to enable Gmail and Calendar APIs:
